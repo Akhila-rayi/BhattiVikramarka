@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "75971198544",
+    "firebase_url": "https://bhattivikramarka-53c51.firebaseio.com",
+    "project_id": "bhattivikramarka-53c51",
+    "storage_bucket": "bhattivikramarka-53c51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75971198544:android:a7533e9918069c34",
+        "android_client_info": {
+          "package_name": "com.versatilemobitech.bhattivikramarka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75971198544-el3cejo6ukp9lv844o1eodag55riken0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.versatilemobitech.bhattivikramarka",
+            "certificate_hash": "721393645f11c8ab0bcbca371d2fe76f9123462f"
+          }
+        },
+        {
+          "client_id": "75971198544-bvp9hnnfdi4ul8udlb9l2s3eqmfk0k2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAR8XG891Nbbj8gWdYn_a7D3G66k88Xbw8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75971198544-bvp9hnnfdi4ul8udlb9l2s3eqmfk0k2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

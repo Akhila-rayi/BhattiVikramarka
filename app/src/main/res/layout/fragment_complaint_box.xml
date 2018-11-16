@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:orientation="vertical">
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                android:id="@+id/edtFullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_bac_transaparent"
+                android:digits="qwertyuioplkjhgfdsazxcvbnmMNBVCXZASDFGHJKLPOIUYTREWQ"
+                android:hint="@string/fullname"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="@dimen/space_small"
+                android:singleLine="true"
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_medium"
+                android:imeOptions="actionNext"
+                />
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                android:id="@+id/edtMobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:background="@drawable/edit_bac_transaparent"
+                android:hint="@string/mobileno"
+                android:inputType="number"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:padding="@dimen/space_small"
+                android:singleLine="true"
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_medium"
+                android:imeOptions="actionNext"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                    android:id="@+id/edtDistrict"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bac_transaparent"
+                    android:hint="@string/district"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_small"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/color_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_medium"
+                    android:imeOptions="actionNext"
+                    android:drawableRight="@drawable/dropdownicon"
+                    android:focusableInTouchMode="false"
+                    android:focusable="false"
+                    android:editable="false"
+                    android:clickable="true"
+                    android:longClickable="false"/>
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                    android:id="@+id/edtConstituencies"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bac_transaparent"
+                    android:hint="@string/constituencies"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_small"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/color_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_medium"
+                    android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                    android:id="@+id/edtMandal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bac_transaparent"
+                    android:hint="@string/mandal"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_small"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/color_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_medium"
+                    android:imeOptions="actionNext"/>
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                    android:id="@+id/edtVillage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_small"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_bac_transaparent"
+                    android:hint="@string/village"
+                    android:maxLines="1"
+                    android:padding="@dimen/space_small"
+                    android:singleLine="true"
+                    android:textColor="@color/color_black"
+                    android:textColorHint="@color/color_black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/text_medium"
+                    android:imeOptions="actionNext"/>
+            </LinearLayout>
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicEditText
+                android:id="@+id/edtDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_small"
+                android:background="@drawable/edit_bac_transaparent"
+                android:gravity="top"
+                android:hint="@string/description"
+                android:minLines="6"
+                android:text=""
+                android:textColor="@color/color_black"
+                android:textColorHint="@color/color_black"
+                android:textCursorDrawable="@null"
+                android:textSize="@dimen/text_medium"
+                android:imeOptions="actionDone"/>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="@dimen/space_small"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rlUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xxlarge"
+                android:background="@drawable/corners_app_color">
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtUploadImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/uploadimage"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txtUploadImg"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:src="@drawable/uploadimg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlUploadPdf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xxlarge"
+                android:background="@drawable/corners_app_color">
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtUploadPdf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/uploadpdf"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/text_xmedium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/txtUploadPdf"
+                    android:gravity="center"
+                    android:src="@drawable/pdf" />
+            </RelativeLayout>
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                android:id="@+id/txtSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_5xlarge"
+                android:layout_marginTop="@dimen/space_6xlarge"
+                android:background="@drawable/corners_app_color"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/text_xmedium" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

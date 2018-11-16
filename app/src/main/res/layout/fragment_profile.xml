@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bhattibg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/width_space"
+                android:layout_height="@dimen/height_space"
+                android:layout_marginTop="@dimen/space_xmedium"
+                android:src="@drawable/bhattiimage" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/space_small"
+                android:orientation="vertical">
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txtCaption"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="BHATTI VIKRAMARKA MALLU"
+                    android:textColor="@color/app_color"
+                    android:textSize="@dimen/text_xlarge" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtCaption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txtCaption"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="MLA-Madhira Constituency"
+                    android:textColor="@color/color_black"
+                    android:textSize="14sp"
+                    app:font_type1="regular" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/txtCaption"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Working President-TPCC"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular" />
+
+            </LinearLayout>
+
+
+            <!--<ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_shadow" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_xlarge"
+            android:layout_marginRight="@dimen/space_xlarge"
+            android:layout_marginTop="@dimen/space_small"
+            android:orientation="vertical">
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/about"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/text_large" />
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                android:id="@+id/txtAbout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_xmedium"
+                android:text="@string/profiledata"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_small" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bhattibg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/width_space"
+            android:layout_height="@dimen/height_space"
+            android:layout_marginTop="@dimen/space_xmedium"
+            android:src="@drawable/bhattiimage" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/space_small"
+            >
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtCaption"
+                android:layout_gravity="center"
+                android:maxLines="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="BHATTI VIKRAMARKA MALLU"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_xlarge"/>
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                android:id="@+id/txtCaption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtCaption"
+
+                android:gravity="right"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="MLA-Madhira Constituency"
+                android:textColor="@color/color_black"
+                android:textSize="14sp"
+                app:font_type1="regular" />
+
+            <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                android:id="@+id/txtMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtCaption"
+
+                android:gravity="right"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="Working President-TPCC"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/text_small"
+                app:font_type1="regular"
+                android:layout_marginBottom="50dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtProfile"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_small"
+                    android:src="@drawable/profile"/>
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/profile"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtGallery"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_small"
+                    android:src="@drawable/gallery" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/gallery"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgVideos"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtVideos"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_small"
+                    android:src="@drawable/videos" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtVideos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/videos"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/space_small"
+            android:layout_weight="0.4"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgDailyactivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtDailyActivities"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_small"
+                    android:src="@drawable/dailyactivities" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtDailyActivities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/dailyactivities"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgComplaintbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtComplaint"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_small"
+                    android:src="@drawable/complaintbox" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtComplaint"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/complaintbox"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.33"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgContactus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/txtAudio"
+                    android:paddingBottom="@dimen/space_vsmall"
+                    android:paddingLeft="@dimen/space_small"
+                    android:paddingRight="@dimen/space_small"
+                    android:paddingTop="@dimen/space_small"
+                    android:src="@drawable/contactus" />
+
+                <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+                    android:id="@+id/txtAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="@string/contactus"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/text_small"
+                    app:font_type1="regular" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>

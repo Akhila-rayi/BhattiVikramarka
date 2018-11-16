@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Avant Guard Font-->
+    <declare-styleable name="AvantGuardTextView">
+        <attr name="font_type" />
+    </declare-styleable>
+
+    <attr name="font_type">
+        <enum name="regular" value="1" />
+    </attr>
+
+    <!--Century Gothic Font-->
+    <declare-styleable name="CenturyGothicTextView">
+        <attr name="font_type1" />
+    </declare-styleable>
+
+    <attr name="font_type1">
+        <enum name="regular" value="1" />
+    </attr>
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/itemhome"
+            android:icon="@drawable/side_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/itemprofile"
+            android:icon="@drawable/side_profile"
+            android:title="@string/profile" />
+        <item
+            android:id="@+id/itemgallery"
+            android:icon="@drawable/side_gallery"
+            android:title="@string/gallery" />
+        <item
+            android:id="@+id/itemvideo"
+            android:icon="@drawable/side_video"
+            android:title="@string/videos" />
+        <item
+            android:id="@+id/itemdailyactivities"
+            android:icon="@drawable/side_daily_activities"
+            android:title="@string/dailyactivities" />
+        <item
+            android:id="@+id/itemComplaintbox"
+            android:icon="@drawable/side_complaint"
+            android:title="@string/complaintbox" />
+      <!--  <item
+            android:id="@+id/itemaudiosongs"
+            android:icon="@drawable/side_audio_songs"
+            android:title="@string/audiosongs" />-->
+        <item
+            android:id="@+id/itemcontactus"
+            android:icon="@drawable/side_contact_us"
+            android:title="@string/contactus" />
+    </group>
+</menu>

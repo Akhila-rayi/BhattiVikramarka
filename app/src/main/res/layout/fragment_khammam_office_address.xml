@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.versatilemobitech.kavithak.fragments.JagruthiOfficeAddressFragment">
+    <LinearLayout
+        android:id="@+id/llMaps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgMaps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mapsimage" />
+
+        <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+            android:id="@+id/txtAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_tiny"
+            android:text="@string/address"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_small" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/phoneicon" />
+
+        <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_tiny"
+            android:text="Phone:+91 08749272239"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_small" />
+
+    </LinearLayout>
+        <!--<LinearLayout
+            android:id="@+id/llMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/mailimage" />
+
+        <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+            android:id="@+id/txtMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_tiny"
+            android:text="info@telaganajagruthi.org"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_small" />
+        </LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/llWebsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/imgWbsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/websiteimg" />
+
+        <com.versatilemobitech.bhattivikramarka.views.CenturyGothicTextView
+            android:id="@+id/txtWebsite1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_tiny"
+            android:text="www.bhattivikramarkamallu.in"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/text_small" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
